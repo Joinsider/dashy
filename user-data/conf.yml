@@ -1,47 +1,276 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
-  navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
-appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  title: Home Lab
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: Network
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_0
+        title: Unifi Local
+        icon: >-
+          https://play-lh.googleusercontent.com/femOifnBg1-dlh2_rpEAzQzIuTXqFHtvNLIsmHOR7VvgtqLfOEHoz8eZS7w5H8TqqMdQ=s256-rw
+        url: http://10.10.1.1
+        target: sametab
+        statusCheckAllowInsecure: true
+        id: 0_746_unifilocal
+      - &ref_1
+        title: Unifi Site Manager
+        icon: >-
+          https://play-lh.googleusercontent.com/6xPvOaJmSyc68OzFx9d84uxGZuxOQg6DYgwWUIp_DoeXaT1u_wtdtnSu8wgT7N-344fk
+        url: https://unifi.ui.com/
+        id: 1_746_unifisitemanager
+      - &ref_2
+        title: Fritz!Box 6591 Cable
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/de/thumb/6/68/Fritz%21_Logo.svg/2048px-Fritz%21_Logo.svg.png
+        url: http://10.1.1.1
+        target: sametab
+        id: 2_746_fritzboxcable
+      - &ref_3
+        title: Fritz!Box 7490 Keller
+        icon: >-
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP2dTJyKj850fH5RWPmimzWNqzc2gdFnOhDw&s
+        url: http://10.10.1.119
+        target: sametab
+        id: 3_746_fritzboxkeller
+      - &ref_4
+        title: TP-Link TL-SG108PE
+        icon: >-
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHGt4EG0G71dIK4RCDStJHtVYGKFmJyOGLqw&s
+        url: http://10.10.1.5
+        target: sametab
+        id: 4_746_tplinktlsgpe
+      - &ref_5
+        title: Fritz!Repeater 600
+        icon: >-
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP2dTJyKj850fH5RWPmimzWNqzc2gdFnOhDw&s
+        url: http://10.10.10.160
+        target: sametab
+        id: 5_746_fritzrepeater
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+      - *ref_3
+      - *ref_4
+      - *ref_5
+  - name: CasaOS
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_6
+        title: CasaOS
+        icon: >-
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVIYfMCUxXfR1nnei1kWmI7ntiGR3NhjvX6g&s
+        url: http://casaos.loc
+        target: sametab
+        statusCheckUrl: http://10.10.1.155
+        statusCheckAllowInsecure: true
+        id: 0_538_casaos
+      - &ref_7
+        title: Paperless-NGX
+        icon: >-
+          https://f-droid.org/repo/com.quinncasey.paperless_share/en-US/icon_VN7TZpi8-Od_o69wLePX93YOpH3vX3CLYu78VBqZCxs=.png
+        url: http://casaos.loc:8011
+        target: sametab
+        statusCheckAllowInsecure: true
+        id: 1_538_paperlessngx
+      - &ref_8
+        title: Pi-Hole
+        icon: https://upload.wikimedia.org/wikipedia/commons/0/00/Pi-hole_Logo.png
+        url: http://casaos.loc:8800/admin/
+        target: sametab
+        statusCheckAllowInsecure: true
+        id: 2_538_pihole
+      - &ref_9
+        title: My-Speed
+        icon: >-
+          https://camo.githubusercontent.com/b6ed3712e223ccd081be74f446bf1ab34cd6bbff7f79c9242e93daabe15b7913/68747470733a2f2f692e696d6775722e636f6d2f61436d413672482e706e67
+        url: http://casaos.loc:5216
+        target: sametab
+        statusCheckAllowInsecure: true
+        id: 3_538_myspeed
+      - &ref_10
+        title: Uptime Kuma
+        icon: https://uptime.kuma.pet/img/icon.svg
+        url: http://casaos.loc:3001
+        target: sametab
+        statusCheckAllowInsecure: true
+        id: 4_538_uptimekuma
+      - &ref_11
+        title: Change Detection
+        icon: >-
+          https://developer.asustor.com/uploadIcons/0020_117518_1663638255_changedetection_256.png
+        url: http://casaos.loc:5000
+        target: sametab
+        statusCheckAllowInsecure: true
+        id: 5_538_changedetection
+      - &ref_12
+        title: Portainer
+        icon: https://cdn.worldvectorlogo.com/logos/portainer.svg
+        url: http://casaos.loc:9000
+        statusCheckAllowInsecure: true
+        id: 6_538_portainer
+      - &ref_13
+        title: FireFly III
+        icon: >-
+          https://docs.firefly-iii.org/images/explanation/more-information/logo/logo.png
+        url: http://casaos.loc:3473/login
+        target: sametab
+        statusCheckAllowInsecure: true
+        id: 7_538_fireflyiii
+      - &ref_14
+        title: FireFly Importer
+        icon: https://www.svgrepo.com/show/331392/firefly-iii.svg
+        url: http://casaos.loc:3474
+        id: 8_538_fireflyimporter
+    filteredItems:
+      - *ref_6
+      - *ref_7
+      - *ref_8
+      - *ref_9
+      - *ref_10
+      - *ref_11
+      - *ref_12
+      - *ref_13
+      - *ref_14
+  - name: FamilyNAS
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_15
+        title: DSM Local
+        icon: >-
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe0R0IwpTf_2Q_20JZ3ivykGVv7enVMQ2tlA&s
+        url: https://familynas.loc:5001
+        target: sametab
+        statusCheckAllowInsecure: true
+        id: 0_836_dsmlocal
+      - &ref_16
+        title: DSM QuickConnect
+        icon: >-
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM-soEtIAzfSaG5l304XZ9a3U2tnTmbIYv4A&s
+        url: https://familynas.quickconnect.to
+        target: sametab
+        statusCheckUrl: http://familynas.loc
+        id: 1_836_dsmquickconnect
+      - &ref_17
+        title: Bitwarden
+        icon: >-
+          https://static-00.iconduck.com/assets.00/bitwarden-v2-icon-2048x2048-umubgkfr.png
+        url: https://bitwarden.fampopprol.me
+        target: sametab
+        id: 2_836_bitwarden
+    filteredItems:
+      - *ref_15
+      - *ref_16
+      - *ref_17
+  - name: HomeAssistant
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_18
+        title: HomeAssistant
+        icon: >-
+          https://play-lh.googleusercontent.com/bGn6qxUHwqZmgtv7RwgxCzl4Uy26SFQrJljVmoOvoIKWa-Xty8s0vOUWcgovUAEAKXnI
+        url: http://homeassistant.fampopprol.me
+        target: sametab
+        statusCheckUrl: http://homeassistant.loc:8123
+        statusCheckAllowInsecure: true
+        id: 0_1347_homeassistant
+    filteredItems:
+      - *ref_18
+  - name: Web
+    icon: ''
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_19
+        title: Startpage
+        icon: https://www.startpage.com/sp/cdn/favicons/mstile-310x310--light.png
+        url: https://startpage.com
+        target: sametab
+        id: 0_286_startpage
+      - &ref_20
+        title: Speedtest
+        icon: >-
+          https://play-lh.googleusercontent.com/1LKWySZIE8Shx6Y1oy1LgrAtgDo-FwweOmW1hnfTVggPOM0txJ1qYtc8G8XOEfDpGA
+        url: https://speedtest.net
+        target: sametab
+        id: 1_286_speedtest
+      - &ref_21
+        title: Google Maps
+        icon: >-
+          https://ih1.redbubble.net/image.1061586820.1105/flat,750x,075,f-pad,750x1000,f8f8f8.jpg
+        url: https://maps.google.com
+        target: sametab
+        id: 2_286_googlemaps
+      - &ref_22
+        title: Youtube
+        icon: >-
+          https://static-00.iconduck.com/assets.00/youtube-icon-2048x2048-wiwalbpx.png
+        url: https://youtube.de
+        id: 3_286_youtube
+      - &ref_23
+        title: Google
+        icon: >-
+          https://static-00.iconduck.com/assets.00/google-icon-2048x2048-pks9lbdv.png
+        url: https://google.de
+        id: 4_286_google
+    filteredItems:
+      - *ref_19
+      - *ref_20
+      - *ref_21
+      - *ref_22
+      - *ref_23
+appConfig:
+  layout: vertical
+  iconSize: medium
+  theme: glass
+  startingView: default
+  defaultOpeningMethod: sametab
+  statusCheck: true
+  statusCheckInterval: 60
+  language: de
+  faviconApi: allesedv
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: false
+    searchEngine: startpage
+    openingMethod: newtab
+    searchBangs: {}
+  enableFontAwesome: true
+  enableMaterialDesignIcons: false
+  auth:
+    users:
+    - user: johannes
+      hash: 66C946CAE98592F7EBAC1EE4FE1716E08134330EB57AB7FC66233B114A4EE211
+      type: admin
+  hideComponents:
+    hideHeading: false
+    hideNav: false
+    hideSearch: false
+    hideSettings: false
+    hideFooter: false
