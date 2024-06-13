@@ -162,7 +162,7 @@ sections:
         title: DSM QuickConnect
         icon: >-
           https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM-soEtIAzfSaG5l304XZ9a3U2tnTmbIYv4A&s
-        url: https://familynas.quickconnect.to
+        url: https://fampopprol.quickconnect.to
         target: sametab
         statusCheckUrl: http://familynas.loc
         id: 1_836_dsmquickconnect
