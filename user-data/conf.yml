@@ -70,7 +70,7 @@ sections:
         title: CasaOS
         icon: >-
           https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVIYfMCUxXfR1nnei1kWmI7ntiGR3NhjvX6g&s
-        url: http://casaos.loc:81
+        url: http://casaos.loc:82
         target: sametab
         statusCheckUrl: http://10.10.1.155
         statusCheckAllowInsecure: true
