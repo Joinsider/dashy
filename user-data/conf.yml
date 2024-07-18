@@ -137,6 +137,11 @@ sections:
         icon: https://nginxproxymanager.com/icon.png
         url: http://casaos.loc:81
         id: 9_538_nginx
+      - &ref_16
+        title: Gitea
+        icon: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gitea_Logo.svg/2560px-Gitea_Logo.svg.png 
+        url: http://casaos.loc:3002
+        id: 10_538_gitea
     filteredItems:
       - *ref_6
       - *ref_7
