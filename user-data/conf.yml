@@ -132,6 +132,11 @@ sections:
         icon: https://www.svgrepo.com/show/331392/firefly-iii.svg
         url: http://casaos.loc:3474
         id: 8_538_fireflyimporter
+      - &ref_15
+        title: Nginx Proxy Manager
+        icon: https://nginxproxymanager.com/icon.png
+        url: http://casaos.loc:81
+        id: 9_538_nginx
     filteredItems:
       - *ref_6
       - *ref_7
