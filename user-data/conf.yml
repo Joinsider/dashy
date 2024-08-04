@@ -136,10 +136,11 @@ sections:
         title: Nginx Proxy Manager
         icon: https://nginxproxymanager.com/icon.png
         url: http://casaos.loc:81
-        id: 9_538_nginx
+        id: 9_538_nginxproxymanager
       - &ref_16
         title: Gitea
-        icon: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gitea_Logo.svg/2560px-Gitea_Logo.svg.png 
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gitea_Logo.svg/2560px-Gitea_Logo.svg.png
         url: http://casaos.loc:3002
         id: 10_538_gitea
     filteredItems:
@@ -152,6 +153,8 @@ sections:
       - *ref_12
       - *ref_13
       - *ref_14
+      - *ref_15
+      - *ref_16
   - name: FamilyNAS
     displayData:
       sortBy: default
@@ -160,7 +163,7 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - &ref_15
+      - &ref_17
         title: DSM Local
         icon: >-
           https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe0R0IwpTf_2Q_20JZ3ivykGVv7enVMQ2tlA&s
@@ -168,7 +171,7 @@ sections:
         target: sametab
         statusCheckAllowInsecure: true
         id: 0_836_dsmlocal
-      - &ref_16
+      - &ref_18
         title: DSM QuickConnect
         icon: >-
           https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM-soEtIAzfSaG5l304XZ9a3U2tnTmbIYv4A&s
@@ -176,17 +179,25 @@ sections:
         target: sametab
         statusCheckUrl: http://familynas.loc
         id: 1_836_dsmquickconnect
-      - &ref_17
+      - &ref_19
         title: Bitwarden
         icon: >-
           https://static-00.iconduck.com/assets.00/bitwarden-v2-icon-2048x2048-umubgkfr.png
         url: https://bitwarden.fampopprol.me
         target: sametab
         id: 2_836_bitwarden
+      - &ref_20
+        title: DSM - Domain
+        icon: >-
+          https://community.synology.com/images/picture/1280x1280/507/1588829446_24nk8.png
+        url: https://dsm.fampopprol.me
+        target: sametab
+        id: 3_836_dsmdomain
     filteredItems:
-      - *ref_15
-      - *ref_16
       - *ref_17
+      - *ref_18
+      - *ref_19
+      - *ref_20
   - name: HomeAssistant
     displayData:
       sortBy: default
@@ -195,7 +206,7 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - &ref_18
+      - &ref_21
         title: HomeAssistant
         icon: >-
           https://play-lh.googleusercontent.com/bGn6qxUHwqZmgtv7RwgxCzl4Uy26SFQrJljVmoOvoIKWa-Xty8s0vOUWcgovUAEAKXnI
@@ -205,7 +216,7 @@ sections:
         statusCheckAllowInsecure: true
         id: 0_1347_homeassistant
     filteredItems:
-      - *ref_18
+      - *ref_21
   - name: Web
     icon: ''
     displayData:
@@ -215,44 +226,44 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - &ref_19
+      - &ref_22
         title: Startpage
         icon: https://www.startpage.com/sp/cdn/favicons/mstile-310x310--light.png
         url: https://startpage.com
         target: sametab
         id: 0_286_startpage
-      - &ref_20
+      - &ref_23
         title: Speedtest
         icon: >-
           https://play-lh.googleusercontent.com/1LKWySZIE8Shx6Y1oy1LgrAtgDo-FwweOmW1hnfTVggPOM0txJ1qYtc8G8XOEfDpGA
         url: https://speedtest.net
         target: sametab
         id: 1_286_speedtest
-      - &ref_21
+      - &ref_24
         title: Google Maps
         icon: >-
           https://ih1.redbubble.net/image.1061586820.1105/flat,750x,075,f-pad,750x1000,f8f8f8.jpg
         url: https://maps.google.com
         target: sametab
         id: 2_286_googlemaps
-      - &ref_22
+      - &ref_25
         title: Youtube
         icon: >-
           https://static-00.iconduck.com/assets.00/youtube-icon-2048x2048-wiwalbpx.png
         url: https://youtube.de
         id: 3_286_youtube
-      - &ref_23
+      - &ref_26
         title: Google
         icon: >-
           https://static-00.iconduck.com/assets.00/google-icon-2048x2048-pks9lbdv.png
         url: https://google.de
         id: 4_286_google
     filteredItems:
-      - *ref_19
-      - *ref_20
-      - *ref_21
       - *ref_22
       - *ref_23
+      - *ref_24
+      - *ref_25
+      - *ref_26
 appConfig:
   layout: vertical
   iconSize: medium
@@ -275,9 +286,9 @@ appConfig:
   enableMaterialDesignIcons: false
   auth:
     users:
-    - user: johannes
-      hash: 66C946CAE98592F7EBAC1EE4FE1716E08134330EB57AB7FC66233B114A4EE211
-      type: admin
+      - user: johannes
+        hash: 66C946CAE98592F7EBAC1EE4FE1716E08134330EB57AB7FC66233B114A4EE211
+        type: admin
   hideComponents:
     hideHeading: false
     hideNav: false
